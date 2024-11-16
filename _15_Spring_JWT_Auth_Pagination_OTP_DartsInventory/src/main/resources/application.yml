@@ -1,0 +1,33 @@
+spring:
+  datasource:
+    username: #enter your username for your db
+    password: #enter your password for your db
+    url: jdbc:mysql://localhost:3306/darts
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 5MB
+  mail:
+    host: smtp.gmail.de #enter your email provider
+    port: 587
+    username: "" #enter your email
+    password: "" #enter your password
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+project:
+  image: images/
+
+base:
+  url: "http://localhost:8080"

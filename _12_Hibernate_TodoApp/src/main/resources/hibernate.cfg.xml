@@ -1,0 +1,14 @@
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://***</property> <!-- Add your url -->
+        <property name="hibernate.connection.username">***</property> <!-- Add your username -->
+        <property name="hibernate.connection.password">***</property> <!-- Add your password -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.show_sql">true</property>
+
+        <mapping class="org.example.Task"/>
+        <mapping class="org.example.CompletedTask"/>
+    </session-factory>
+</hibernate-configuration>
